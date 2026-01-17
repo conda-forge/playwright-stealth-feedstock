@@ -1,5 +1,5 @@
 {% set name = "playwright-stealth" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4f44d416d4226689895a4d1cfb40e8d137216c0c9710ea8f84bae2dbf1186fc5
+  sha256: a36f735d61469c12bda179b58d5fc4228bbee61c9cf5b1343b1497a5fd51ec1a
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - poetry-core
     - pip
   run:
-    - playwright >=1.0.0,<2.0.0
+    - playwright >=1.40.0
     - python >={{ python_min }}
     - setuptools
     - playwright-python
