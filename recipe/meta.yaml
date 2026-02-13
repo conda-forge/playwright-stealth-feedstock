@@ -1,5 +1,5 @@
 {% set name = "playwright-stealth" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a36f735d61469c12bda179b58d5fc4228bbee61c9cf5b1343b1497a5fd51ec1a
+  sha256: ac57e51873190da5e653e03720e948c8f0a3d06b098f1d56763103d23ee48143
 
 build:
   noarch: python
